@@ -23,8 +23,8 @@ body {
 }
 
 .advice {
-    width: 1320px; /* w1320 */
-    background: yellow;
+    width: 1321px; /* w1320 */
+    /* background: yellow; */
     margin: 0 auto; /* m0-a: width가 있는 블록요소의 가운데 정렬 */
     padding: 100px 0; /* p100-0 */
 }
@@ -38,13 +38,16 @@ body {
 }
 
 .advice > ul {
-    border: 1px solid #000; /* bd */
+    /* border: 1px solid #000; bd */
     margin-top: 78px; /* mt78 */
+    display: flex; /* df */
+    flex-wrap: wrap; /* fxww: 줄바꿈이 필요할 때 */
+    gap: 48px 20px; /* g20 :  */
 }
 
 .advice > ul > li {
-    width: 427px; /* w427 */
-    height: 514px; /* h514 */
+    width: 427px;
+    height: 514px;
     background: #fff; /* bg#fff */
     text-align: center; /* tac */
     padding: 40px; /* p40 */
