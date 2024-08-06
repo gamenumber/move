@@ -16,3 +16,56 @@ li {
 img {
   vertical-align: top; /* vat */
 }
+
+body {
+  font: 15px/1.6 sans-serif;
+}
+
+.home-service {
+  width: 1085px;
+  margin: 0 auto;
+  /* background: #ff5; */
+  padding: 45px 0; /* p45-0 */
+  text-align: center; /* tac */
+}
+
+.title-box {
+  background: #f00; /* bg#f00 */
+  text-align: center; /* tac */
+}
+
+.title-box h2 {
+  /* fz24+c */
+  font-size: 24px;
+  color: #000;
+}
+.title-box p {
+  margin-top: 10px; /* mt10 */
+}
+
+.home-service > ul {
+  /* background: #5f5; bg#5f5 */
+  margin-top: 35px; /* mt35 */
+  display: flex; /* df */
+  justify-content: space-between; /* jcsb */
+}
+
+.home-service > ul > li {
+  /* w301+h394+bd */
+  width: 301px;
+  height: 394px;
+  /* border: 1px solid #000; */
+}
+
+.home-service > ul > li > dl {
+  margin-top: 10px; /* mt10 */
+}
+.home-service > ul > li > dl > dt {
+  /* fz18+c */
+  font-size: 18px;
+  color: #000;
+}
+.home-service > ul > li > dl > dd {
+  /* mt10 */
+  margin-top: 10px;
+}
