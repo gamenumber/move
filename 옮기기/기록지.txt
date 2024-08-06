@@ -41,3 +41,9 @@ Desktop web app -> 로컬 폰트사용가능 여기서는 예를 들어서 prete
 
 - 부모 공간이 flex가 되면 메인축이 가로로 생겨남
 - 아이템은 그 메인축으로 자동정렬
+
+prettier -> 자동 줄바꿈 프로그램
+설치하고 Default Formatter에서 Prettie - Code formatter설치하고 Format On Save Mode를 체크한다.
+
+Xhtml방식인데 딱히 상관없으니까 그냥 놔두고
+react.js라이브러리 유명하니까 나중에 참고하자.
