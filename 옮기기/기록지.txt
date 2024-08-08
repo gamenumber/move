@@ -47,3 +47,10 @@ prettier -> 자동 줄바꿈 프로그램
 
 Xhtml방식인데 딱히 상관없으니까 그냥 놔두고
 react.js라이브러리 유명하니까 나중에 참고하자.
+
+*position
+- static, relative, absolute, fixxed, sticky
+- 모든 요소는 position: static <- 기본값
+- position: absolute를 적용하면 원래 자기 위치를 기준으로 3차원으로 뜬다.
+-> 원하는 좌표값을 설정해서 쓰자! (정확하게 띄우기 위함 -> top, right, bottom, left)
+-> 이 때, 직계 조상에 기준점 역할을 하는 세팅이 없으면 viewport를 기준으로 한다.

@@ -69,15 +69,18 @@ a:hover {
   background: #fff;
 }
 
+.info-list li dl dd {
+  /* p21-20 */
+  padding: 21px 20px;
+}
+
 .info-list li dl dt {
   /* p11-20-13 */
   padding: 11px 20px 13px;
   background: #434159;
   color: #fff;
-}
-.info-list li dl dd {
-  /* p21-20 */
-  padding: 21px 20px;
+
+  position: relative; /* posr : 직계 자손 절대배치의 기준점 */
 }
 
 .info-list li dl dt::after {
@@ -87,5 +90,63 @@ a:hover {
   /* w15+h15+bg */
   width: 15px;
   height: 15px;
-  background: #f00 url(../img/alpha_pointer.png) no-repeat 0 0;
+  background: url(../img/alpha_pointer.png) no-repeat 0 0;
+  position: absolute; /* posa */
+  bottom: -15px;
+  left: 20px;
+}
+
+/* hover */
+
+.info-list li:hover dl dt {
+  background: #ea002c;
+}
+
+.info-list li:hover dl dt::after {
+  background-position: 0 -15px;
+}
+
+figure {
+  background: #000;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 1200px;
+  height: 440px;
+}
+
+figure * {
+  flex-wrap: wrap;
+}
+
+.test {
+  /* w40+h40+bg+m50-a */
+  width: 35px;
+  height: 35px; /* 클리핑영역 만들기 -> 포토샵과 비슷한 개념 */
+  background: #000 url(../img/sp_main.3e7d337e.png) no-repeat -663px -250px;
+  margin: 50px auto;
+}
+
+.test2 {
+  /* w40+h40+bg+m50-a */
+  width: 65px;
+  height: 65px; /* 클리핑영역 만들기 -> 포토샵과 비슷한 개념 */
+  background: #000 url(../img/sp_main.3e7d337e.png) no-repeat -495px -89px;
+  margin: 50px auto;
+}
+
+.test3 {
+  /* w40+h40+bg+m50-a */
+  width: 138px;
+  height: 138px; /* 클리핑영역 만들기 -> 포토샵과 비슷한 개념 */
+  background: #000 url(../img/sp_main.3e7d337e.png) no-repeat -0px -0px;
+  margin: 50px auto;
+}
+
+.test4 {
+  /* w40+h40+bg+m50-a */
+  width: 66px;
+  height: 59px; /* 클리핑영역 만들기 -> 포토샵과 비슷한 개념 */
+  background: #000 url(../img/sp_main.3e7d337e.png) no-repeat -334px -469px;
+  margin: 50px auto;
 }
