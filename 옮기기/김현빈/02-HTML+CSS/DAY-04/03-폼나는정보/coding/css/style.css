@@ -1,0 +1,91 @@
+@charset "utf-8";
+
+/* 디자인 초기화 */
+
+* {
+  /* m0+p0+bxbb */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol,
+li {
+  list-style: none; /* lisn */
+}
+
+img {
+  vertical-align: top; /* vat */
+}
+
+body {
+  font: 16px/1.4 "맑은 고딕", "Malgun Gothic" sans-serif; /* f */
+  color: #666; /* c#666 */
+  letter-spacing: -1.5px; /* lts-1.5 */
+  word-break: keep-all; /* wbka */
+}
+
+a {
+  text-decoration: none; /* tdn */
+  color: inherit; /* c */
+}
+
+a:hover {
+  text-decoration: none; /* tdn */
+  color: #434159; /* c#434159 */
+}
+
+.info {
+  /* w1180+m0-a+bg#ff5 */
+  width: 1180px;
+  margin: 50px auto;
+  background: #ff5;
+  padding: 42px 0; /* p42-0 */
+}
+
+.info h1 {
+  /* background: red; bg */
+  text-align: center; /* tac: 블록요소가 감싸는 인라인 요소의 가운데 정렬 */
+  font-weight: normal; /* fwn */
+
+  /* fz40+c#ea002c */
+  font-size: 40px;
+  color: #ea002c;
+}
+
+.info-list {
+  /* background: green;  */
+  display: flex; /* df : 메인축의 기본은 가로 -> 쪼그라들음 (인라인처럼 -> 그러나 인라인 요소는 아님;)*/
+  justify-content: space-between; /* jcsb : 남은 여백을 골고루 사이 사이 -> 여백이 없으면 소용없는 코드지만 여백이 있으면 이게 먹힘 */
+  margin-top: 36px; /* mt36 */
+}
+.info-list li {
+  /* border: 1px solid #000;  */
+
+  /* w280+h185+bg#fff */
+  width: 280px;
+  height: 185px;
+  background: #fff;
+}
+
+.info-list li dl dt {
+  /* p11-20-13 */
+  padding: 11px 20px 13px;
+  background: #434159;
+  color: #fff;
+}
+.info-list li dl dd {
+  /* p21-20 */
+  padding: 21px 20px;
+}
+
+.info-list li dl dt::after {
+  content: ""; /* ct */
+  display: block; /* db */
+
+  /* w15+h15+bg */
+  width: 15px;
+  height: 15px;
+  background: #f00 url(../img/alpha_pointer.png) no-repeat 0 0;
+}
