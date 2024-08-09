@@ -1,0 +1,98 @@
+@charset "utf-8";
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+* {
+  /* m0+p0+bxbb */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol,
+li {
+  list-style: none; /* lisn */
+}
+
+img {
+  vertical-align: top; /* vat */
+}
+
+body {
+  font: 16px/1.6 Pretendard, sans-serif;
+}
+
+a {
+  text-decoration: none; /* tdn */
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #546220;
+}
+
+.menu {
+  /* w1078+m0-a+bg#ff5 */
+  width: 1078px;
+  margin: 0 auto;
+  /* background: #ff5; */
+}
+
+.menu h1 {
+  display: none; /* dn */
+}
+
+.menu-list {
+  /* background: green; */
+  display: flex; /* df */
+  flex-wrap: wrap; /* fxww : 부모의 크기대로 감싸기 */
+  gap: 60px 29px; /* g60-29 */
+}
+.menu-list li {
+  /* border: 1px solid #000; */
+
+  /* w340+h410+bg#fff */
+  width: 340px;
+  height: 410px;
+  background: #fff;
+  position: relative; /* por */
+}
+
+.badge {
+  /* w40+h40+bg+db */
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: no-repeat 50%;
+  position: absolute; /* poa */
+  top: 20px;
+  left: 21px;
+  color: transparent; /* 투명하게 (글씨) */
+}
+
+.badge-best {
+  background-image: url(../img/ico_menu_best.png);
+}
+.badge-hot {
+  background-image: url(../img/ico_menu_hot.png);
+}
+.badge-new {
+  background-image: url(../img/ico_menu_new.png);
+}
+
+.menu-con {
+  /* tac+pt15 */
+  text-align: center;
+  padding-top: 15px;
+}
+
+.menu-con strong {
+  font-weight: 600; /* fw600 */
+  font-size: 20px; /* fz20 */
+  color: #000; /* c */
+}
+.menu-con p {
+  font-size: 14px; /* fz14 */
+  color: #999; /* c#999 */
+}
